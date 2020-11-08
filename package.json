@@ -1,0 +1,30 @@
+{
+  "name": "sonytextile",
+  "version": "1.0.0",
+  "description": "sonyTextile's official website",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalPixel/sonyTextile.git"
+  },
+  "keywords": [
+    "website",
+    "ssg",
+    "eleventy",
+    "html",
+    "css"
+  ],
+  "author": "Pico",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitalPixel/sonyTextile/issues"
+  },
+  "homepage": "https://github.com/vitalPixel/sonyTextile#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
