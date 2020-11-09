@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "scss": "node-sass --output-style compressed -o src/_includes/css src/scss"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
   },
   "homepage": "https://github.com/vitalPixel/sonyTextile#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "html-minifier": "^4.0.0",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0"
   }
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>sonyTextile - {{ title }}</title>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {% if description %}
+        <meta name="description" content="{{description}}"/>
+        {% endif %}
+        
+        <link rel="stylesheet" type="text/css" href="./css/fix.css">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+            {{ content | safe }}
+    </body>
+</html>
