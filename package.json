@@ -4,10 +4,11 @@
   "description": "sonyTextile's official website",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "clean": "rm -rf dist/*",
     "watch": "eleventy --serve",
-    "start": "npm-run-all --parallel sass watch",
-    "sass": "sass --watch src/scss/styles.scss src/css/styles.css"
+    "sass": "sass --style=compressed --source-map-urls=absolute --embed-source-map --watch src/scss/styles.scss dist/css/styles.css",
+    "start": "npm-run-all --sequential clean --parallel sass watch",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
