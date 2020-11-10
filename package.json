@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve",
-    "scss": "node-sass --output-style compressed -o src/_includes/css src/scss"
+    "watch": "eleventy --serve",
+    "start": "npm-run-all --parallel sass watch",
+    "sass": "sass --watch src/scss/styles.scss src/css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "html-minifier": "^4.0.0",
-    "node-sass": "^5.0.0",
-    "onchange": "^7.1.0"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.29.0"
   }
 }

@@ -1,5 +1,5 @@
 const htmlmin = require("html-minifier");
-// const sass = require("sass");
+const sass = require("sass");
 
 module.exports = function(eleventyConfig) {
 
@@ -20,21 +20,6 @@ module.exports = function(eleventyConfig) {
         browser: "firefox",
         open: "local"        
     });
-
-    // eleventyConfig.addTransform("sass", function(content, outputhPath) {
-    //     if( outputhPath.endsWith(".scss") ) {
-    //         let rendered = sass.render({
-    //             data: content,
-    //             includePaths: ["/scss"],
-    //             sourceMap: true,
-    //             sourceMapEmbed: true,
-
-    //         });
-    //         return rendered;
-    //     }
-
-    //     return content;
-    // });
 
     eleventyConfig.addTransform("htmlmin", function(content, outputhPath) {
         if( outputhPath.endsWith(".html") ) {
