@@ -8,6 +8,7 @@
         {% if description %}
         <meta name="description" content="{{description}}"/>
         {% endif %}
+        <link rel="cannonical" href="{{site.url}}{{page.url | url}}">
 
         {% if googleVerification %}
         <meta name="google-site-verification" content="{{googleVerification}}" />
