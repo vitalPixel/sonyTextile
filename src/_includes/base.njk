@@ -5,14 +5,28 @@
 
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        {% if googleVerification %}
+        <meta name="google-site-verification" content="{{googleVerification}}" />
+        {% endif %}
+        
         {% if description %}
         <meta name="description" content="{{description}}"/>
         {% endif %}
         <link rel="cannonical" href="{{site.url}}{{page.url | url}}">
 
-        {% if googleVerification %}
-        <meta name="google-site-verification" content="{{googleVerification}}" />
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="{{ description or title }}">
+        <meta property="og:type" content="website">
+        {% if cover %}
+        <meta property="og:image" content="{{ cover }}" />
+        <meta property="og:width" content="1200" />
+        <meta property="og:height" content="675" />
         {% endif %}
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="{{site.tweeter}}">
+        <meta name="twitter:creator" content="{{site.author.tweeter}}">
+
         
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&display=swap" rel="stylesheet">
