@@ -1,9 +1,9 @@
 {
     "name": "sonyTextile",
     "url": "https://sonytextile.com",
+    "tweeter": "@sony_textile",
     "author": {
         "name": "vitalPixel",
         "tweeter": "@vitalPixel"
-    },
-    "tweeter": "@sony_textile"
+    }
 }

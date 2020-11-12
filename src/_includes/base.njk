@@ -19,7 +19,7 @@
         <meta property="og:description" content="{{ description or title }}">
         <meta property="og:type" content="website">
         {% if cover %}
-        <meta property="og:image" content="{{ cover }}" />
+        <meta property="og:image" content="{{site.url}}{{cover}}" />
         <meta property="og:width" content="1200" />
         <meta property="og:height" content="675" />
         {% endif %}
