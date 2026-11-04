@@ -9,3 +9,7 @@ From the repository root, run `python3 -m http.server 8000` and open the local s
 Check the desktop and mobile layouts, keyboard navigation, links, images and contact details after changes. The canonical URL and sitemap assume `https://sonytextile.com/`; update both if the production domain changes. A local preview does not publish the site.
 
 The hero, fitting and moodboard images are illustrative editorial visuals, not photographs of a specific SONYTEX facility, employee or supplier. Preserve the embedded captions and full 3:2 compositions.
+
+## Netlify
+
+`netlify.toml` publishes the repository root directly and overrides any legacy build command. Branch deploys must be enabled in the Netlify site settings. Their URL or any custom-domain path mapping is configured in Netlify, independently of this repository.

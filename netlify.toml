@@ -1,0 +1,4 @@
+# This site is static: publish the repository root without an npm build.
+[build]
+  command = "true"
+  publish = "."
