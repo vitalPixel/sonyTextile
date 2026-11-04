@@ -1,22 +1,15 @@
-# sonyTextile official website
-This is the open source code for the official website of sonyTextile, a textile sourcing and development company based in Porto, Portugal.
+# SONYTEX website
 
-You can access the live version of the website at www.sonyTextile.com.
+A lightweight, one-page website for SONYTEX, an independent production office in Porto. The site is plain HTML and CSS and has no build step, package dependencies, or JavaScript.
 
-It's a simple institutional website with the aim of describing sonyTextile's services to clients and potential clients.
+## Develop and preview
 
-## Technologies
-- HTML
-- CSS
-- Javascript
-- Eleventy [www.11ty.dev](www.11ty.dev)
-- Deployed to Netlify
+From the repository root, run `python3 -m http.server 8000` and open the local server in a browser. Edit `index.html` and `assets/styles.css` directly. `404.html`, `robots.txt`, and `sitemap.xml` are deployed from the root alongside the `assets` directory. Configure the hosting provider to serve `404.html` for missing pages.
 
-## Setup
-Clone this repo and run `npm install` to install all dependencies.
+Check the desktop and mobile layouts, keyboard navigation, links, images and contact details after changes. The canonical URL and sitemap assume `https://sonytextile.com/`; update both if the production domain changes. A local preview does not publish the site.
 
-## Usage
-After cloning and installing all of the dependencies, you can run `npm start` to start the application. You'll be able to access the website at localhost:8000.
+The hero, fitting and moodboard images are illustrative editorial visuals, not photographs of a specific SONYTEX facility, employee or supplier. Preserve the embedded captions and full 3:2 compositions.
 
-## License
-The website code is licensed under the terms of the **MIT LICENSE**.
+## Netlify
+
+`netlify.toml` stages the static files in `dist` for deployment; it does not compile the site or install dependencies. Branch deploys must be enabled in the Netlify site settings. Their URL or any custom-domain path mapping is configured in Netlify, independently of this repository.

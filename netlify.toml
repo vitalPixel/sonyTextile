@@ -1,0 +1,4 @@
+# Stage the static files where Netlify expects its deploy directory.
+[build]
+  command = "mkdir -p dist/assets && cp index.html 404.html robots.txt sitemap.xml dist/ && cp assets/* dist/assets/"
+  publish = "dist"
