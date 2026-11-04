@@ -12,4 +12,4 @@ The hero, fitting and moodboard images are illustrative editorial visuals, not p
 
 ## Netlify
 
-`netlify.toml` publishes the repository root directly and overrides any legacy build command. Branch deploys must be enabled in the Netlify site settings. Their URL or any custom-domain path mapping is configured in Netlify, independently of this repository.
+`netlify.toml` stages the static files in `dist` for deployment; it does not compile the site or install dependencies. Branch deploys must be enabled in the Netlify site settings. Their URL or any custom-domain path mapping is configured in Netlify, independently of this repository.
